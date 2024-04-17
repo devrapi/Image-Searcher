@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+       font-family: 'Poppins', sans-serif;
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       scroll-behavior: smooth;
+       scroll-padding-top: 2rem;
+}
+body{
+    line-height: 1.6;
+    background-color: rgba(26, 199, 184, 0.26);
+
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+#Search-Input{
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 6px #00000031;
+}
+#Search-Button{
+    padding: 10px 20px;
+    background-color: #09a9a9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 6px #00000031;
+}
+#Search-Button:hover{
+    
+    background-color: #10c0c0;
+}
+.image-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.SearchResult{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #00000031;
+    overflow: hidden;
+
+}
+.SearchResult img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.1s ease-in-out; 
+}
+
+.SearchResult img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#Show-More{
+    padding: 10px 20px;
+    background-color: #04536b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 6px #00000031;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    display: none;
+}
+#Show-More:hover{
+    background-color: #086986;
+}
+
+@media screen and (max-width: 786px) {
+   
+    .SearchResult{
+        padding: 20px;
+    }
+    
+   
+   
+    .SearchResult{
+        width: 45%;
+    }
+    
+}
+
+@media screen and (max-width: 486px) {
+    .SearchResult{
+        width: 100%;
+    }
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+  }
